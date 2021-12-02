@@ -118,7 +118,7 @@ body {
 }
 
 .header-link:active, .header-link:focus {
-    outline: none;}
+    outline: none;} 
 
 .header-link:hover,
 .header-link:focus {
@@ -271,9 +271,6 @@ fill: #757575;
     background-color: var(--hover-color);
 }
 
-.hero-btn:active, .hero-btn:focus {
-    outline: none;
-}
 
 /* ABOUT*/
 
@@ -887,6 +884,10 @@ margin-bottom: 0;
     justify-content: center;
 }
 
+.modal-close-icon:focus {
+    fiil: var(--hover-color);
+}
+
 .is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -914,11 +915,28 @@ margin-bottom: 0;
     display: flex; 
     margin-bottom: 10px;
     flex-direction: column; 
-    
 } 
 
 .form-input {
+    width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 42px;
+}
+
+.form-icon {
+    fill: #212121;
+}
+
+.form-input:focus {
+    border-color: var(--hover-color);
+    outline: none;
+}
+
+.form-input:focus .form-icon {
+    fill: var(--hover-color);
+    /* fill: var(--hover-color); */
 }
 
 .form-text-input {
@@ -927,12 +945,59 @@ margin-bottom: 0;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: #757575;
-    margin-bottom: 4px;
+    margin-bottom: 4px;   
+    
 }
 
+.form-comment {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+}
 
+.form-comment::placeholder {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    margin-left: 16px;
+}
 
+.form-comment:focus {
+    border-color: var(--hover-color);
+    outline: none;
+}
+
+.form-input-wrap {
+    width: 100%;
+    position: relative;
+}
+
+.form-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);  
+}
+
+.form-agreement {
+    margin-bottom: 30px;
+}
 
 .form-submit-btn {
-
+padding: 10px 55px 10px 56px;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-size: 16px;
+line-height: 1.88;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
 }
