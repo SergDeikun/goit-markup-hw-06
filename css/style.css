@@ -249,7 +249,7 @@ fill: #757575;
 
 .hero-btn {
     font-family: inherit;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     background-color: #2196F3;
@@ -679,8 +679,15 @@ text-align: center;
     fill: #FFFFFF;
 }
 
+/* FOOTER FORM */
+
 .footer-form {
-margin-left: 93px;
+margin-left: 93px; 
+}
+
+.footer-form-send {
+    align-items: center;
+    display: flex;
 }
 
 .footer-form-title {
@@ -690,8 +697,7 @@ margin-left: 93px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px; 
 }
 
 .footer-input {
@@ -702,9 +708,16 @@ margin-left: 93px;
     padding: 15px 10px 15px 16px;
     background-color: inherit;
     color: #FFFFFF;
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     margin-right: 12px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.footer-input:hover,
+.footer-input:focus {
+    border-color: var(--hover-color);
+    outline: none;
 }
 
 .footer-input::placeholder {
@@ -714,13 +727,30 @@ margin-left: 93px;
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    
 } 
 
 .footer-form-btn {
-    padding: 10px 62px 10px 30px;
+    padding: 10px 28px 10px 29px;
     background-color: var(--hover-color);
     color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     
+}
+
+.icon-footer-send {
+    fill: #FFFFFF;
+    margin-left: 10px;
 }
 
 /* ПОРТФОЛИО */
@@ -748,10 +778,6 @@ margin-left: 93px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                         color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
-.portfolio-item-btn:not(:last-child) {
-    margin-right: 8px;  
 }
 
 .portfolio-btn:hover,
@@ -929,8 +955,9 @@ margin-bottom: 0;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .modal-close:hover .modal-close-icon,
 .modal-close:focus .modal-close-icon {
@@ -966,6 +993,9 @@ margin-bottom: 0;
     flex-direction: column; 
 } 
 
+.form-groupn:not(:last-child) {
+    margin-bottom: 10px;  
+}
 
 .form-input {
     width: 100%;
@@ -999,9 +1029,14 @@ margin-bottom: 0;
 }
 
 .form-comment {
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
     resize: none;
     height: 120px;
     padding: 12px 16px; 
+    cursor: pointer;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-comment::placeholder {
@@ -1036,7 +1071,6 @@ margin-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .check-icon {
@@ -1062,31 +1096,30 @@ margin-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .modal-check {
     margin-top: 20px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 .modal-check:checked + .check-text .check-item {
     background-color: var(--hover-color);
     border: none;
 }
 
+.modal-check:focus + .check-text .check-item {
+    color: var(--hover-color);
+}
+
 .link-check-text {
     color: var(--hover-color);
 }
 
-
 .form-submit-btn {
 padding: 10px 55px 10px 56px;
-background: #2196F3;
+background-color: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 font-size: 16px;
@@ -1097,6 +1130,5 @@ text-align: center;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 cursor: pointer;
-display: block;
 margin: 0 auto;
 }

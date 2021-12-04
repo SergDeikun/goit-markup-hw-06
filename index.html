@@ -450,13 +450,20 @@
                 </div>
                 <div class="footer-form">
                     <p class="footer-form-title">Подпишитесь на рассылку</p>
-                    <form action="#">
+                    <form action="#" class="footer-form-send">
+                        <label for="user-mail"></label> 
                         <input 
                         type="email" 
                         name="footer-mailing" 
+                        id="user-mail"
                         class="footer-input"
                         placeholder="E-mail">
-                        <button type="submit" class="footer-form-btn">Подписаться</button>
+                        <button type="submit" class="footer-form-btn">
+                            Подписаться
+                                <svg class="icon-footer-send" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-footer-send"></use>
+                                </svg>
+                        </button>
                     </form>
                 </div>
         </div>
@@ -530,7 +537,7 @@
                     Комментарий 
                     </label>
                     <textarea 
-                        class="form-input form-comment"
+                        class="form-comment"
                         name="comment" 
                         id="comment" 
                         placeholder="Введите текст" 
