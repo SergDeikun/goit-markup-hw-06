@@ -926,6 +926,7 @@ margin-bottom: 0;
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     position: absolute;
+    padding: 40px 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -971,10 +972,6 @@ margin-bottom: 0;
 }
 
 /* FORM */
-
-.form {
-    padding: 40px 40px;
-}
 
 .form-title {
     font-weight: 700;
@@ -1023,6 +1020,12 @@ margin-bottom: 0;
     
 }
 
+.form-group-text {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
 .form-comment {
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1061,8 +1064,6 @@ margin-bottom: 0;
 }
 
 .form-check {
-    margin-top: 20px;
-    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1129,5 +1130,5 @@ text-align: center;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 cursor: pointer;
-margin: 0 auto;
+margin: 30px auto;
 }
