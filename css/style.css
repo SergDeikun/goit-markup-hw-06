@@ -974,7 +974,6 @@ margin-bottom: 0;
 
 .form {
     padding: 40px 40px;
-
 }
 
 .form-title {
@@ -992,10 +991,6 @@ margin-bottom: 0;
     margin-bottom: 10px;
     flex-direction: column; 
 } 
-
-.form-groupn:not(:last-child) {
-    margin-bottom: 10px;  
-}
 
 .form-input {
     width: 100%;
@@ -1110,8 +1105,12 @@ margin-bottom: 0;
 }
 
 .modal-check:focus + .check-text .check-item {
-    color: var(--hover-color);
-}
+    border-color: var(--hover-color);
+    outline: none;
+} 
+
+
+
 
 .link-check-text {
     color: var(--hover-color);
